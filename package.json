@@ -7,7 +7,7 @@
     "lint": "tslint --project tsconfig.json --format stylish",
     "build": "tsc",
     "serve": "ts-node src/server.ts",
-    "start": "ts-node src/server.ts",
+    "start": "npm run build && node dist/server.js",
     "dev": "nodemon"
   },
   "author": "David Johnson",
